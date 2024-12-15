@@ -9,18 +9,40 @@ import {
 import styles from "./Loginpage.module.css";
 
 const Loginpage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const { loginUser } = useUser();
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    loginUser(username);
-    setUsername("");
-    setPassword("");
-    navigate("/");
+    try {
+      const response = await fetch("http://localhost:7080/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user),
+      });
+
+      if (response.ok) {
+        const userData = await response.json();
+        loginUser(userData.username);
+        setUser({ email: "", password: "" });
+        navigate("/");
+      } else {
+        const error = await response.json();
+        alert(error.message);
+      }
+    } catch (err) {
+      console.error("Login failed:", err.message);
+    }
   };
 
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
@@ -31,16 +53,17 @@ const Loginpage = () => {
         <h2 className={styles.title}>Login</h2>
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.inputGroup}>
-            <label htmlFor="username" className={styles.label}>
-              Username
+            <label htmlFor="email" className={styles.label}>
+              Email
             </label>
             <div className={styles.inputWithIcon}>
               <input
                 type="text"
-                id="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-                placeholder="Enter your username"
+                id="email"
+                name="email"
+                value={user.username}
+                onChange={handleChange}
+                placeholder="Enter your Email"
                 required
                 className={styles.input}
               />
@@ -55,8 +78,9 @@ const Loginpage = () => {
               <input
                 type={showPassword ? "text" : "password"}
                 id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                name="password"
+                value={user.password}
+                onChange={handleChange}
                 placeholder="Enter your password"
                 required
                 className={styles.input}

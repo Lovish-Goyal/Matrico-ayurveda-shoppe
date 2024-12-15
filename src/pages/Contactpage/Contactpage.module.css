@@ -8,59 +8,51 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 /* Content section (heading and description) */
-.content {
-  text-align: center;
-  color: #10042c;
+.pageTitle {
+  text-align: start;
+  color: #026110;
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 60px;
+  margin-top: 80px;
+  font-weight: bold;
+  margin-left: 10%;
 }
 
 /* Box wrapper - contains all boxes */
 .boxWrapper {
-  background-color: rgba(51, 194, 70, 0.8);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* Flex layout for contact info and form */
 .contactWrapper {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
-  width: 100%;
+  width: 40%;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  margin-left: 8%;
 }
 
-/* Contact Info Styling */
+.pageSubTitle {
+  text-align: start;
+  color: #597059;
+  font-size: 18px;
+  font-weight: bold;
+}
 .contactInfo {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  margin-top: 20px;
 }
-
 /* Individual contact boxes (Address, Phone, Email) */
 .contactBox {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  gap: 15px;
+  padding: 10px 0;
 }
 
 .icon {
@@ -69,19 +61,19 @@
 }
 
 /* Text inside each contact box */
-.text h3 {
+.text > h3 {
   margin-bottom: 5px;
   font-size: 18px;
   font-weight: 600;
+  color: #363736;
 }
 
-.text p {
+.text > p {
   font-size: 16px;
-  color: #555;
+  color: #686868;
 }
 
 .text a {
-  color: #4caf50;
   text-decoration: none;
 }
 
@@ -105,11 +97,11 @@
 
 /* Contact Form Styling */
 .contactForm {
-  flex: 1;
   background-color: #fff;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 40%;
 }
 
 .contactForm h2 {

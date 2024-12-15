@@ -1,11 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../../utils/UserContext.jsx";
 import { AiOutlineUser } from "react-icons/ai";
 import styles from "./Nav.module.css";
 
 function Nav() {
-  const { user } = useUser();
+  const { user, logoutUser } = useUser();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logoutUser();
+    alert("Logged out successfully!");
+    navigate("/");
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -44,6 +51,9 @@ function Nav() {
           <div className={styles.userInfo}>
             <AiOutlineUser className={styles.userIcon} />
             <span className={styles.username}>{user.username}</span>
+            <button onClick={handleLogout} className={styles.logout}>
+              LOGOUT
+            </button>
           </div>
         ) : (
           <>

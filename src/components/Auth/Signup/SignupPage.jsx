@@ -9,19 +9,39 @@ import {
 import styles from "./SignupPage.module.css";
 
 const SignupPage = () => {
-  const [username, setUsername] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser((prevUser) => ({ ...prevUser, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Signup Successful!");
-    setUsername("");
-    setEmail("");
-    setPassword("");
-    navigate("/login");
+    try {
+      const response = await fetch("http://localhost:7080/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(user),
+      });
+
+      if (response.ok) {
+        alert("Signup successful!");
+        setUser({ username: "", email: "", password: "" });
+        navigate("/login");
+      } else {
+        const error = await response.json();
+        alert(error.message);
+      }
+    } catch (err) {
+      console.error("Signup failed:", err.message);
+    }
   };
 
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
@@ -39,8 +59,9 @@ const SignupPage = () => {
               <input
                 type="text"
                 id="username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                name="username"
+                value={user.username}
+                onChange={handleChange}
                 placeholder="Enter your username"
                 required
                 className={styles.input}
@@ -56,8 +77,9 @@ const SignupPage = () => {
               <input
                 type="email"
                 id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                name="email"
+                value={user.email}
+                onChange={handleChange}
                 placeholder="Enter your email"
                 required
                 className={styles.input}
@@ -73,10 +95,13 @@ const SignupPage = () => {
               <input
                 type={showPassword ? "text" : "password"}
                 id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                name="password"
+                value={user.password}
+                onChange={handleChange}
                 placeholder="Enter your password"
                 required
+                minLength={8}
+                autoComplete="your password"
                 className={styles.input}
               />
               {showPassword ? (
