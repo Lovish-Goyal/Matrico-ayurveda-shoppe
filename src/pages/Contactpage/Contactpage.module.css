@@ -17,7 +17,6 @@
 .pageTitle {
   text-align: start;
   color: #026110;
-  margin-bottom: 10px;
   font-size: 60px;
   margin-top: 80px;
   font-weight: bold;
@@ -97,8 +96,10 @@
 
 /* Contact Form Styling */
 .contactForm {
-  background-color: #fff;
-  padding: 30px;
+  background-color: #026110;;
+  padding: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 40%;
@@ -107,6 +108,8 @@
 .contactForm h2 {
   text-align: center;
   margin-bottom: 20px;
+  color: white;
+  font-size: 30px;
 }
 
 /* Input fields and labels */
@@ -125,34 +128,17 @@
 }
 
 .inputBox input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
+  background-color: #c2eac4;
+  color: darkgreen;
   border: none;
   cursor: pointer;
   padding: 15px;
   border-radius: 5px;
   font-size: 16px;
+  font-weight: bold;
 }
 
-.inputBox input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-.inputBox span {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 16px;
-  color: #555;
-  pointer-events: none;
-}
-
-.inputBox input:focus ~ span,
-.inputBox textarea:focus ~ span,
-.inputBox input:valid ~ span,
-.inputBox textarea:valid ~ span {
-  top: -10px;
-  font-size: 12px;
-  color: #4caf50;
-}
+/* .inputBox input[type="submit"]:hover {
+  background-color: rgb(133, 133, 132);
+  color: #c2eac4;;
+} */

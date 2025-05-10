@@ -54,19 +54,20 @@ function Contactpage() {
 
       <div className={styles.boxWrapper}>
         <div className={styles.contactWrapper}>
-          <div className={styles.pageSubTitle}>
-            We're very Approachable and would love to speak to you. Feel Free to
-            call, send us an email, Tweet us or simply complete the enquiry
-            Form.
-          </div>
           <div className={styles.contactInfo}>
+            <div className={styles.pageSubTitle}>
+              We're very Approachable and would love to speak to you. Feel Free
+              to call, send us an email, Tweet us or simply complete the enquiry
+              Form.
+            </div>
             <div className={styles.contactBox}>
               <div className={styles.icon}>
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div className={styles.text}>
                 <h3>Email</h3>
-                <p>temproryEmail@dummy.domain</p>
+                <p>support@example.com</p>
+                <p>info@example.com</p>
               </div>
             </div>
 
@@ -76,18 +77,8 @@ function Contactpage() {
               </div>
               <div className={styles.text}>
                 <h3>Phone</h3>
-                <p>+91-000-000-0000</p>
-                <p>+1-000-000-000</p>
-              </div>
-            </div>
-
-            <div className={styles.contactBox}>
-              <div className={styles.icon}>
-                <i className="fa-solid fa-fax"></i>
-              </div>
-              <div className={styles.text}>
-                <h3>Fax</h3>
-                <p>058-000-0000</p>
+                <p>+91 98765-43210</p>
+                <p>+1 (123) 456-7890</p>
               </div>
             </div>
 
@@ -97,28 +88,32 @@ function Contactpage() {
               </div>
               <div className={styles.text}>
                 <h3>Address</h3>
-                <p>#405544 Sugar camp Road, Ambala, India</p>
+                <p>405544 Sugar Camp Road, Ambala, Haryana, India</p>
+                <br />
+                <p>Monday – Friday: 9:00 AM – 6:00 PM IST</p>
+                <p>Saturday: 10:00 AM – 2:00 PM IST</p>
+                <p>Sunday: Closed</p>
               </div>
             </div>
 
             <ul className={styles.socialIcons}>
               <li>
-                <a href="#">
+                <a href="#" title="Facebook">
                   <i className="fa-brands fa-facebook"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" title="Twitter">
                   <i className="fa-brands fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" title="LinkedIn">
                   <i className="fa-brands fa-linkedin"></i>
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" title="Instagram">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
@@ -129,16 +124,16 @@ function Contactpage() {
         {/* Contact Form Section */}
         <div className={styles.contactForm}>
           <form onSubmit={handleSubmit}>
-            <h2>Send Message</h2>
+            <h2>Enter Your Details:</h2>
             <div className={styles.inputBox}>
               <input
                 type="text"
                 name="username"
                 value={contactUser.username}
                 onChange={handleInputChange}
+                placeholder="Username"
                 required
               />
-              <span>Full Name</span>
             </div>
             <div className={styles.inputBox}>
               <input
@@ -146,21 +141,22 @@ function Contactpage() {
                 name="email"
                 value={contactUser.email}
                 onChange={handleInputChange}
+                placeholder="Email"
                 required
               />
-              <span>Email</span>
             </div>
             <div className={styles.inputBox}>
               <textarea
                 name="message"
                 value={contactUser.message}
                 onChange={handleInputChange}
+                placeholder="Type Your Message..."
+                rows={5}
                 required
               ></textarea>
-              <span>Type Your Message...</span>
             </div>
             <div className={styles.inputBox}>
-              <input type="submit" value="Send" />
+              <input type="submit" value="Send Message" />
             </div>
           </form>
         </div>

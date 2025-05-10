@@ -543,6 +543,10 @@ function Homepage() {
     navigate("/detailpage", { state: { product } });
   };
 
+  const handleGoToSymptoms = () => {
+    navigate("/symptoms"); // the path to your symptom page
+  };
+
   return (
     <>
       <div className={styles.textContent}>
@@ -550,11 +554,12 @@ function Homepage() {
           style={{
             fontSize: "40px",
             marginTop: "35px",
-            color: "green",
+            color: "gray",
           }}
         >
           Welcome to Our Ayurvedic Medicine Collection
         </h1>
+
         <p
           style={{
             fontSize: "25px",
@@ -567,7 +572,81 @@ function Homepage() {
           Explore our range of natural and organic Ayurvedic medicines designed
           to promote wellness and balance.
         </p>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "20px",
+            marginLeft: "100px",
+          }}
+        >
+          <div
+            style={{
+              width: "70%",
+            }}
+          >
+            <h1
+              style={{
+                fontSize: "40px",
+                marginTop: "10px",
+                color: "darkgreen",
+              }}
+            >
+              Check Your Symptoms
+            </h1>
+            <p
+              style={{
+                fontSize: "25px",
+                marginTop: "10px",
+                color: "gray",
+                marginBottom: "15px",
+              }}
+            >
+              Receive a list of potential diagnoses based on your symptoms.
+              Powered by cutting-edge artificial intelligence technology.
+              Quickly assess your health condition with advanced AI algorithms.
+              Get personalized insights to help you make informed decisions.
+            </p>
+            <button
+              style={{
+                padding: "10px 20px",
+                fontSize: "18px",
+                backgroundColor: "darkgreen",
+                border: "none",
+                color: "white",
+                borderRadius: "5px",
+                cursor: "pointer",
+                marginTop: "20px",
+              }}
+              onClick={handleGoToSymptoms}
+            >
+              CLICK HERE TO CHECK NOW
+            </button>
+          </div>
+
+          {/* Right Side: Image */}
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "auto", // Ensures the container height adjusts automatically
+            }}
+          >
+            <img
+              src="/images/hr.png"
+              alt="Ayurvedic Medicine"
+              style={{
+                height: "500px", // Match the image's height to the container's height
+                width: "auto", // Keeps the image's aspect ratio intact
+              }}
+            />
+          </div>
+        </div>
+      </div>
+      {/* <div>
           <ul className={styles.diseaseListRow}>
             {diseases.map((disease) => (
               <li className={styles.diseaseList}>
@@ -653,10 +732,21 @@ function Homepage() {
               </div>
             </div>
           )}
-        </div>
-      </div>
+        </div> */}
 
       <div className={styles.container}></div>
+
+      <h1
+        style={{
+          fontSize: "40px",
+          color: "darkgreen",
+          textAlign: "center",
+          border: "3px solid darkgreen",
+          margin: "30px 40px",
+        }}
+      >
+        Ayurvedic Medicines
+      </h1>
 
       <div className={styles.Boxes}>
         {images.map((image, index) => (

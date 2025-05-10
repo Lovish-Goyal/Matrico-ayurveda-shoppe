@@ -10,8 +10,8 @@ export const UserProvider = ({ children }) => {
     return storedUser ? JSON.parse(storedUser) : null;
   });
 
-  const loginUser = (username) => {
-    const userData = { username };
+  const loginUser = (userData) => {
+    // const userData = { username };
     setUser(userData);
     localStorage.setItem("user", JSON.stringify(userData));
   };

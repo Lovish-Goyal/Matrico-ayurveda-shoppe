@@ -11,12 +11,15 @@ import SignupPage from "./components/Auth/Signup/SignupPage.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { UserProvider } from "./utils/UserContext.jsx";
 import Detailpage from "./pages/DetailPage/Detailpage.jsx";
+import SymptomPage from "./pages/symptoms.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   return (
     <UserProvider>
       <Router>
         <Nav />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<Aboutpage />} />
@@ -26,6 +29,7 @@ function App() {
           <Route path="/login" element={<Loginpage />} />
           <Route path="/register" element={<SignupPage />} />
           <Route path="/detailpage" element={<Detailpage />} />
+          <Route path="/symptoms" element={<SymptomPage />} />
         </Routes>
         <Footer />
       </Router>

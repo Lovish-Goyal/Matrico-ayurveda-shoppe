@@ -33,7 +33,7 @@ const Loginpage = () => {
 
       if (response.ok) {
         const userData = await response.json();
-        loginUser(userData.username);
+        loginUser(userData);
         setUser({ email: "", password: "" });
         navigate("/");
       } else {
@@ -61,7 +61,7 @@ const Loginpage = () => {
                 type="text"
                 id="email"
                 name="email"
-                value={user.username}
+                value={user.email} // ✅ FIXED HERE
                 onChange={handleChange}
                 placeholder="Enter your Email"
                 required

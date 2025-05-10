@@ -1,71 +1,106 @@
-.comingSoon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(to right, #f0f0f0, #e0e0e0);
-  font-family: Arial, sans-serif;
+/* Global Container */
+.container {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.title {
-  font-size: 3em;
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mainTitle {
+  font-size: 36px;
   font-weight: bold;
-  color: #296338;
-  text-shadow: 2px 2px 4px rgba(85, 227, 75, 0.2);
-  animation: fadeInUp 1s ease-in-out;
+  color: #2e3b4e;
+  margin-bottom: 10px;
 }
 
-.message {
-  font-size: 1.2em;
-  color: #666;
-  text-align: center;
-  animation: fadeInDown 1s ease-in-out;
+.subTitle {
+  font-size: 18px;
+  color: #6d7d8b;
+  line-height: 1.6;
 }
 
-/* Add a colorful button */
-.button {
-  background-color: #4caf50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+/* Section Titles */
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4e5b6e;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4e5b6e;
+  padding-bottom: 10px;
+}
+
+/* Content inside each section */
+.sectionContent {
+  font-size: 18px;
+  color: #5a6e79;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Tip Containers */
+.tipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.tipCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.tipCard:hover {
+  transform: translateY(-5px);
+}
+
+.tipTitle {
+  font-size: 22px;
+  color: #2f3b47;
+  margin-bottom: 10px;
+}
+
+.tipContent {
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-  animation: fadeInUp 1s ease-in-out;
+  color: #707f8c;
+  line-height: 1.6;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* List for Diet Section */
+.dietList {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #5a6e79;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.dietList li {
+  margin-bottom: 10px;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Footer */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #4e5b6e;
+  background-color: #e0e7ec;
+  padding: 20px;
+  border-radius: 10px;
 }

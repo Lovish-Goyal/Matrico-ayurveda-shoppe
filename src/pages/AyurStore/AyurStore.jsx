@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./AyurStore.module.css";
 
@@ -85,7 +85,7 @@ const images = [
   },
   {
     name: "Divya Swasari Pravahi",
-    src: "Divya_Swasari_Pravahi.jpg",
+    src: "Divya_Swasari_Pravahi.png",
     link: "https://www.amazon.in/Patanjali-Swasari-Pravahi-250-g/dp/B00SFI7SRM",
     description:
       "Herbal & Ayurveda Diabetic Care Juice 1000 ml is a natural, plant-based supplement designed to help manage blood sugar levels and promote overall wellness.",
@@ -351,13 +351,52 @@ function AyurStore() {
   const handleMoreDetails = (product) => {
     navigate("/detailpage", { state: { product } });
   };
+
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredImages = images.filter((image) =>
+    image.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <>
       <div className={styles.container}>
+        {/* Heading and Search Bar in one row */}
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            margin: "0 20px",
+            marginTop: "20px",
+          }}
+        >
+          <h1
+            style={{
+              fontSize: "40px",
+              color: "darkgreen",
+              marginRight: "20px",
+            }}
+          >
+            Ayur Store
+          </h1>
+          <input
+            style={{
+              padding: "8px",
+              border: "2px solid green",
+              marginTop: "5px",
+              width: "85%",
+            }}
+            type="text"
+            placeholder="Search your medicines ..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+        </div>
+
         <div className={styles.textContent}></div>
 
         <div className={styles.Boxes}>
-          {images.map((image, index) => (
+          {filteredImages.map((image, index) => (
             <div key={index} className={styles.box}>
               <img
                 src={`/images/${image.src}`}
