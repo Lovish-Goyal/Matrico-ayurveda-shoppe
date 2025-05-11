@@ -11,7 +11,7 @@ const SymptomPage = () => {
 
   return (
     <div className={styles.pageContainer}>
-      <h2 className={styles.heading}>Select a Symptom</h2>
+      <h2 className={styles.heading}>SELECT A SYMPTOM</h2>
       <ul className={styles.symptomListRow}>
         {symptoms.map((symptom) => (
           <li key={symptom.name} className={styles.symptomList}>

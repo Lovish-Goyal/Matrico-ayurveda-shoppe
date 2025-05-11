@@ -98,3 +98,59 @@
   border-radius: 5px;
   font-size: 16px;
 }
+
+@media (max-width: 1024px) {
+  .Boxes {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .rowbutton {
+    flex-direction: column;
+  }
+
+  .detailsbutton,
+  .buybutton {
+    width: 100%;
+  }
+
+  .container > div:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .container h1 {
+    font-size: 28px !important;
+    margin-bottom: 10px;
+  }
+
+  .container input {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 22px !important;
+  }
+
+  .container input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .imageDetails p {
+    font-size: 14px;
+  }
+
+  .Boxes {
+    gap: 15px;
+  }
+}

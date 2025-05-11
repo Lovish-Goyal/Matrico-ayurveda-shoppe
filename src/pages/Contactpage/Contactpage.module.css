@@ -1,19 +1,22 @@
+/* General Reset and Box-sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Main Contact Section */
 .contact {
   background-image: url("/images/contact_us.png");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
-/* Content section (heading and description) */
+/* Page Title */
 .pageTitle {
   text-align: start;
   color: #026110;
@@ -23,15 +26,16 @@
   margin-left: 10%;
 }
 
-/* Box wrapper - contains all boxes */
+/* Box Wrapper */
 .boxWrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-/* Flex layout for contact info and form */
+/* Contact Info Section */
 .contactWrapper {
   width: 40%;
   border-radius: 10px;
@@ -40,16 +44,16 @@
   margin-left: 8%;
 }
 
+/* Subtitle for Contact Section */
 .pageSubTitle {
   text-align: start;
   color: #597059;
   font-size: 18px;
   font-weight: bold;
-}
-.contactInfo {
   margin-top: 20px;
 }
-/* Individual contact boxes (Address, Phone, Email) */
+
+/* Individual Contact Boxes */
 .contactBox {
   padding: 10px 0;
 }
@@ -59,7 +63,7 @@
   color: #4caf50;
 }
 
-/* Text inside each contact box */
+/* Text Inside Contact Box */
 .text > h3 {
   margin-bottom: 5px;
   font-size: 18px;
@@ -72,16 +76,7 @@
   color: #686868;
 }
 
-.text a {
-  text-decoration: none;
-}
-
-.text a:hover {
-  text-decoration: underline;
-}
-
-/* Social media icons */
-
+/* Social Media Icons */
 .socialIcons {
   display: flex;
   justify-content: center;
@@ -94,12 +89,10 @@
   font-size: 25px;
 }
 
-/* Contact Form Styling */
+/* Contact Form Section */
 .contactForm {
-  background-color: #026110;;
-  padding: 0 30px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  background-color: #026110;
+  padding: 30px 30px 10px 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 40%;
@@ -112,7 +105,7 @@
   font-size: 30px;
 }
 
-/* Input fields and labels */
+/* Input Fields and Labels */
 .inputBox {
   position: relative;
   margin-bottom: 20px;
@@ -138,7 +131,88 @@
   font-weight: bold;
 }
 
-/* .inputBox input[type="submit"]:hover {
-  background-color: rgb(133, 133, 132);
-  color: #c2eac4;;
-} */
+/* Responsive Design */
+
+/* For Tablets and Smaller Screens */
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 40px;
+  }
+
+  .boxWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactWrapper,
+  .contactForm {
+    width: 80%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .contactInfo {
+    margin-top: 20px;
+  }
+
+  .contactBox {
+    padding: 15px 0;
+  }
+
+  .contactForm h2 {
+    font-size: 24px;
+  }
+
+  .inputBox input,
+  .inputBox textarea {
+    font-size: 14px;
+  }
+
+  .inputBox input[type="submit"] {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* For Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+
+  .contactWrapper,
+  .contactForm {
+    width: 90%;
+  }
+
+  .contactBox {
+    padding: 10px 0;
+  }
+
+  .contactInfo {
+    margin-top: 20px;
+  }
+
+  .contactForm h2 {
+    font-size: 20px;
+  }
+
+  .inputBox input,
+  .inputBox textarea {
+    font-size: 14px;
+  }
+
+  .inputBox input[type="submit"] {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .socialIcons {
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .socialIcons li {
+    font-size: 20px;
+  }
+}

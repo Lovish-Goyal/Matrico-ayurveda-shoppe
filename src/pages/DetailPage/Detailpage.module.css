@@ -73,3 +73,103 @@
 .buyButton:active {
   background-color: #1b6912; /* Even darker when button is clicked */
 }
+
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: left;
+    padding: 0 10%;
+  }
+
+  .imageContainer {
+    width: 80%;
+    height: 350px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .details {
+    width: 80%;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .details > h1 {
+    font-size: 28px;
+  }
+
+  .details > h2 {
+    font-size: 16px;
+  }
+
+  .details > h2 > span {
+    font-size: 16px;
+  }
+
+  .buyButton {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Media Query for Phones */
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+    align-items: left;
+    padding: 0 5%;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 300px;
+    margin-right: 0;
+  }
+
+  .details {
+    width: 100%;
+    padding-left: 0;
+    border-left: none;
+    /* text-align: center; */
+  }
+
+  .details > h1 {
+    font-size: 24px;
+  }
+
+  .details > h2 {
+    font-size: 14px;
+  }
+
+  .details > h2 > span {
+    font-size: 14px;
+  }
+
+  .buyButton {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/* Media Query for Small Phones */
+@media (max-width: 480px) {
+  .details > h1 {
+    font-size: 20px;
+  }
+
+  .details > h2 {
+    font-size: 12px;
+  }
+
+  .details > h2 > span {
+    font-size: 12px;
+  }
+
+  .buyButton {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+}

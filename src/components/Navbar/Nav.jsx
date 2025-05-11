@@ -2,23 +2,24 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../../utils/UserContext.jsx";
 import { AiOutlineUser } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
 import styles from "./Nav.module.css";
 
 function Nav() {
   const { user, logoutUser } = useUser();
   const navigate = useNavigate();
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const handleLogout = () => {
-    // Ask for confirmation before logging out
     const isConfirmed = window.confirm("Are you sure you want to log out?");
-
     if (isConfirmed) {
       logoutUser();
       alert("Logged out successfully!");
-      navigate("/"); // Navigate to homepage or login page
-      setDropdownOpen(false); // Close dropdown after logout
+      navigate("/");
+      setDropdownOpen(false);
+      setSidebarOpen(false);
     }
   };
 
@@ -26,7 +27,10 @@ function Nav() {
     setDropdownOpen(!dropdownOpen);
   };
 
-  // Close dropdown when clicking outside
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -45,6 +49,12 @@ function Nav() {
         Metrico Ayurveda Shoppe
       </Link>
 
+      {/* Mobile Hamburger */}
+      <div className={styles.hamburger} onClick={toggleSidebar}>
+        ☰
+      </div>
+
+      {/* Desktop Nav List */}
       <ul className={styles.navList}>
         <li className={styles.navItem}>
           <Link to="/" className={styles.navLink}>
@@ -73,12 +83,12 @@ function Nav() {
         </li>
       </ul>
 
+      {/* Desktop Auth */}
       <div className={styles.authContainer} ref={dropdownRef}>
         {user ? (
           <div className={styles.userInfo} onClick={toggleDropdown}>
             <AiOutlineUser className={styles.userIcon} />
             <span className={styles.username}>{user.username}</span>
-
             {dropdownOpen && (
               <div className={styles.dropdown}>
                 <div className={styles.dropdownHeader}>User Profile</div>
@@ -105,6 +115,65 @@ function Nav() {
           </>
         )}
       </div>
+
+      {/* Sidebar for Mobile */}
+      {sidebarOpen && (
+        <div className={styles.sidebar}>
+          <IoMdClose className={styles.closeBtn} onClick={toggleSidebar} />
+          <ul className={styles.sidebarLinks}>
+            <li>
+              <Link to="/" onClick={toggleSidebar}>
+                HOME
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={toggleSidebar}>
+                ABOUT
+              </Link>
+            </li>
+            <li>
+              <Link to="/ayur_store" onClick={toggleSidebar}>
+                AYUR STORE
+              </Link>
+            </li>
+            <li>
+              <Link to="/daily_tips" onClick={toggleSidebar}>
+                AYURVEDIC TIPS
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" onClick={toggleSidebar}>
+                CONTACT US
+              </Link>
+            </li>
+            {user ? (
+              <>
+                <li className={styles.mobileUser}>
+                  <AiOutlineUser /> {user.username}
+                </li>
+                <li>
+                  <button onClick={handleLogout} className={styles.logoutBtn}>
+                    LOGOUT
+                  </button>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/login" onClick={toggleSidebar}>
+                    LOGIN
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/register" onClick={toggleSidebar}>
+                    REGISTER
+                  </Link>
+                </li>
+              </>
+            )}
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

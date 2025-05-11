@@ -1103,150 +1103,7 @@ const symptoms = [
 }
 
 },
- {
-  "name": "Urinary Tract Infections (UTIs)",
-  "Herbs": ["Gokshura", "Varuna", "Chandraprabha Vati", "Punarnava", "Coriander Seeds"],
-  "medicine": "Gokshuradhi Guggul",
-  "image": "Gokshuradhi_guggul.png",
-  "link": "https://www.amazon.com/Patanjali-Baba-Ramdev-Gokshuradi-Guggulu/dp/8513652369",
-  "youtubeVideo": "https://www.youtube.com/embed/z3z1MjENJ-w?si=fFdltkem14ajUsQq",
-  "ayurvedic_upchar": [
-    "Gokshura - Known for its diuretic properties, it helps in flushing out toxins and treats UTI symptoms.",
-    "Varuna - Supports the urinary system and is effective in reducing inflammation caused by UTIs.",
-    "Chandraprabha Vati - Helps in promoting urinary tract health and acts as an anti-inflammatory.",
-    "Punarnava - Renowned for its ability to reduce swelling and promote urinary health.",
-    "Coriander Seeds - Helps in soothing the urinary tract, reducing irritation and preventing infections."
-  ],
-  "vidhi": [
-    "Boil water with Gokshura and Coriander seeds to prepare a detoxifying tea for the urinary tract.",
-    "Take 1-2 tablets of Gokshuradhi Guggul after meals, as recommended.",
-    "Mix 1 tsp of honey and lemon juice in warm water for additional urinary tract support."
-  ],
-  "usage": [
-    "Morning: Drink Gokshura and Coriander seed tea for urinary tract detox.",
-    "Night: Consume Gokshuradhi Guggul with warm water before bed to help reduce inflammation."
-  ],
-  "duration": [
-    "For acute relief: 1-2 weeks.",
-    "For prevention and long-term health: 3-4 weeks followed by periodic usage."
-  ],
-  "ayurvedic_medicine": {
-  "name": "Gokshuradhi Guggul",
-  "brand": "Patanjali Ayurved",
-  "form": "Tablet",
-  "net_weight": "80 tablets",
-  "price": "₹110 (MRP ₹120)",
-  "image": "https://images.openai.com/thumbnails/3c68f5cd44cda88c3e506d557e8817b1.jpeg",
-  "link": "https://www.patanjaliayurved.net/product/ayurvedic-medicine/vati/gokshuradi-guggulu/2135",
-  "ingredients": [
-    "Gokshura (Tribulus terrestris)",
-    "Guggul (Commiphora mukul)",
-    "Haritaki (Terminalia chebula)",
-    "Bibhitaki (Terminalia bellirica)",
-    "Amalaki (Emblica officinalis)",
-    "Black Pepper (Piper nigrum)",
-    "Pippali (Piper longum)",
-    "Ginger (Zingiber officinale)"
-  ],
-  "benefits": [
-    "Supports kidney and urinary tract health",
-    "Helps in managing urinary infections",
-    "Aids in detoxifying the kidneys",
-    "Reduces inflammation and swelling",
-    "Supports reproductive health"
-  ],
-  "dosage": {
-    "standard": "1–2 tablets twice a day with lukewarm water or as directed by the physician",
-    "administration": "Preferably taken after meals"
-  },
-  "safety_information": {
-    "side_effects": "Generally well tolerated; excess use may cause mild digestive discomfort",
-    "precautions": [
-      "Store in a cool, dry place",
-      "Keep away from direct sunlight",
-      "Consult a doctor before use if pregnant, nursing, or on medication"
-    ]
-  },
-  "purchase_links": [
-    "https://www.patanjaliayurved.net/product/ayurvedic-medicine/vati/gokshuradi-guggulu/2135",
-    "https://www.1mg.com/otc/patanjali-gokshuradi-guggulu-otc987654",
-    "https://www.amazon.in/Patanjali-Gokshuradi-Guggulu-80-Tablets/dp/B07ABCDEF1"
-  ]
-}
-
-},
-{
-  "name": "Menstrual Disorders",
-  "Herbs": ["Ashoka", "Shatavari", "Dashmula", "Lodhra", "Guggulu"],
-  "medicine": "Ashokarishth",
-  "image": "Ashokarishth.png",
-  "link": "https://www.amazon.in/-/hi/Patanjali-Ashokarishta-%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%93%E0%A4%82-%E0%A4%B2%E0%A4%BF%E0%A4%8F-%E0%A4%A4%E0%A4%B0%E0%A4%B2/dp/B07J4BYSJ9",
-  "youtubeVideo": "https://www.youtube.com/embed/z3z1MjENJ-w?si=fFdltkem14ajUsQq",
-  "ayurvedic_upchar": [
-    "Ashoka - Known for its ability to regulate the menstrual cycle, reduce excessive bleeding, and provide relief from cramps.",
-    "Shatavari - Balances the hormonal levels and supports overall reproductive health.",
-    "Dashmula - A combination of ten herbs that helps in reducing menstrual pain and improving overall uterine health.",
-    "Lodhra - Used for its astringent properties to reduce bleeding and treat uterine issues.",
-    "Guggulu - Known for its anti-inflammatory properties and helpful in managing menstrual irregularities."
-  ],
-  "vidhi": [
-    "Boil water with Ashoka and Dashmula for a calming herbal tea.",
-    "Take Ashokarishth with warm water after meals, as recommended.",
-    "For additional relief, mix honey and ginger with warm water to soothe the stomach and cramps."
-  ],
-  "usage": [
-    "Morning: Drink Ashoka and Dashmula tea for menstrual health support.",
-    "Night: Take Ashokarishth with warm water before bed for menstrual relief."
-  ],
-  "duration": [
-    "For acute symptoms: 1-2 weeks.",
-    "For regular cycle regulation: 3-4 weeks followed by periodic use."
-  ],
-  "ayurvedic_medicine": {
-  "name": "Ashokarishth",
-  "brand": "Patanjali Ayurved",
-  "form": "Liquid",
-  "net_weight": "450 ml",
-  "price": "₹85 (MRP ₹95)",
-  "image": "https://images.openai.com/thumbnails/3c68f5cd44cda88c3e506d557e8817b1.jpeg",
-  "link": "https://www.patanjaliayurved.net/product/ayurvedic-medicine/arishtha/ashokarishta/10007",
-  "ingredients": [
-    "Ashoka (Saraca indica)",
-    "Dhataki (Woodfordia fruticosa)",
-    "Mustaka (Cyperus rotundus)",
-    "Haritaki (Terminalia chebula)",
-    "Bibhitaki (Terminalia bellirica)",
-    "Amalaki (Emblica officinalis)",
-    "Jeera (Cuminum cyminum)",
-    "Sunthi (Zingiber officinale)"
-  ],
-  "benefits": [
-    "Helps regulate menstrual cycles",
-    "Relieves menstrual pain and discomfort",
-    "Supports uterine health",
-    "Improves digestive health",
-    "Boosts general vitality in women"
-  ],
-  "dosage": {
-    "standard": "15–30 ml with equal amount of water twice daily after meals or as directed by the physician",
-    "administration": "Best taken after meals"
-  },
-  "safety_information": {
-    "side_effects": "Generally safe; high doses may cause mild gastric irritation",
-    "precautions": [
-      "Store in a cool and dry place",
-      "Shake well before use",
-      "Consult a physician before use if pregnant or breastfeeding"
-    ]
-  },
-  "purchase_links": [
-    "https://www.patanjaliayurved.net/product/ayurvedic-medicine/arishtha/ashokarishta/10007",
-    "https://www.1mg.com/otc/patanjali-ashokarishta-otc123456",
-    "https://www.amazon.in/Patanjali-Ashokarishta-450ml/dp/B00XYZ1234"
-  ]
-}
-
-},
+ 
  {
   "name": "Menopause Symptoms",
   "Herbs": ["Shatavari", "Ashoka", "Ashwagandha", "Guduchi", "Brahmi"],
@@ -1793,7 +1650,150 @@ const symptoms = [
     "https://www.ayurvedastore.in"
   ]
 }
-} 
+},
+{
+  "name": "Urinary Tract Infections (UTIs)",
+  "Herbs": ["Gokshura", "Varuna", "Chandraprabha Vati", "Punarnava", "Coriander Seeds"],
+  "medicine": "Gokshuradhi Guggul",
+  "image": "Gokshuradhi_guggul.png",
+  "link": "https://www.amazon.com/Patanjali-Baba-Ramdev-Gokshuradi-Guggulu/dp/8513652369",
+  "youtubeVideo": "https://www.youtube.com/embed/z3z1MjENJ-w?si=fFdltkem14ajUsQq",
+  "ayurvedic_upchar": [
+    "Gokshura - Known for its diuretic properties, it helps in flushing out toxins and treats UTI symptoms.",
+    "Varuna - Supports the urinary system and is effective in reducing inflammation caused by UTIs.",
+    "Chandraprabha Vati - Helps in promoting urinary tract health and acts as an anti-inflammatory.",
+    "Punarnava - Renowned for its ability to reduce swelling and promote urinary health.",
+    "Coriander Seeds - Helps in soothing the urinary tract, reducing irritation and preventing infections."
+  ],
+  "vidhi": [
+    "Boil water with Gokshura and Coriander seeds to prepare a detoxifying tea for the urinary tract.",
+    "Take 1-2 tablets of Gokshuradhi Guggul after meals, as recommended.",
+    "Mix 1 tsp of honey and lemon juice in warm water for additional urinary tract support."
+  ],
+  "usage": [
+    "Morning: Drink Gokshura and Coriander seed tea for urinary tract detox.",
+    "Night: Consume Gokshuradhi Guggul with warm water before bed to help reduce inflammation."
+  ],
+  "duration": [
+    "For acute relief: 1-2 weeks.",
+    "For prevention and long-term health: 3-4 weeks followed by periodic usage."
+  ],
+  "ayurvedic_medicine": {
+  "name": "Gokshuradhi Guggul",
+  "brand": "Patanjali Ayurved",
+  "form": "Tablet",
+  "net_weight": "80 tablets",
+  "price": "₹110 (MRP ₹120)",
+  "image": "https://images.openai.com/thumbnails/3c68f5cd44cda88c3e506d557e8817b1.jpeg",
+  "link": "https://www.patanjaliayurved.net/product/ayurvedic-medicine/vati/gokshuradi-guggulu/2135",
+  "ingredients": [
+    "Gokshura (Tribulus terrestris)",
+    "Guggul (Commiphora mukul)",
+    "Haritaki (Terminalia chebula)",
+    "Bibhitaki (Terminalia bellirica)",
+    "Amalaki (Emblica officinalis)",
+    "Black Pepper (Piper nigrum)",
+    "Pippali (Piper longum)",
+    "Ginger (Zingiber officinale)"
+  ],
+  "benefits": [
+    "Supports kidney and urinary tract health",
+    "Helps in managing urinary infections",
+    "Aids in detoxifying the kidneys",
+    "Reduces inflammation and swelling",
+    "Supports reproductive health"
+  ],
+  "dosage": {
+    "standard": "1–2 tablets twice a day with lukewarm water or as directed by the physician",
+    "administration": "Preferably taken after meals"
+  },
+  "safety_information": {
+    "side_effects": "Generally well tolerated; excess use may cause mild digestive discomfort",
+    "precautions": [
+      "Store in a cool, dry place",
+      "Keep away from direct sunlight",
+      "Consult a doctor before use if pregnant, nursing, or on medication"
+    ]
+  },
+  "purchase_links": [
+    "https://www.patanjaliayurved.net/product/ayurvedic-medicine/vati/gokshuradi-guggulu/2135",
+    "https://www.1mg.com/otc/patanjali-gokshuradi-guggulu-otc987654",
+    "https://www.amazon.in/Patanjali-Gokshuradi-Guggulu-80-Tablets/dp/B07ABCDEF1"
+  ]
+}
+
+},
+{
+  "name": "Menstrual Disorders",
+  "Herbs": ["Ashoka", "Shatavari", "Dashmula", "Lodhra", "Guggulu"],
+  "medicine": "Ashokarishth",
+  "image": "Ashokarishth.png",
+  "link": "https://www.amazon.in/-/hi/Patanjali-Ashokarishta-%E0%A4%AE%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A4%BE%E0%A4%93%E0%A4%82-%E0%A4%B2%E0%A4%BF%E0%A4%8F-%E0%A4%A4%E0%A4%B0%E0%A4%B2/dp/B07J4BYSJ9",
+  "youtubeVideo": "https://www.youtube.com/embed/z3z1MjENJ-w?si=fFdltkem14ajUsQq",
+  "ayurvedic_upchar": [
+    "Ashoka - Known for its ability to regulate the menstrual cycle, reduce excessive bleeding, and provide relief from cramps.",
+    "Shatavari - Balances the hormonal levels and supports overall reproductive health.",
+    "Dashmula - A combination of ten herbs that helps in reducing menstrual pain and improving overall uterine health.",
+    "Lodhra - Used for its astringent properties to reduce bleeding and treat uterine issues.",
+    "Guggulu - Known for its anti-inflammatory properties and helpful in managing menstrual irregularities."
+  ],
+  "vidhi": [
+    "Boil water with Ashoka and Dashmula for a calming herbal tea.",
+    "Take Ashokarishth with warm water after meals, as recommended.",
+    "For additional relief, mix honey and ginger with warm water to soothe the stomach and cramps."
+  ],
+  "usage": [
+    "Morning: Drink Ashoka and Dashmula tea for menstrual health support.",
+    "Night: Take Ashokarishth with warm water before bed for menstrual relief."
+  ],
+  "duration": [
+    "For acute symptoms: 1-2 weeks.",
+    "For regular cycle regulation: 3-4 weeks followed by periodic use."
+  ],
+  "ayurvedic_medicine": {
+  "name": "Ashokarishth",
+  "brand": "Patanjali Ayurved",
+  "form": "Liquid",
+  "net_weight": "450 ml",
+  "price": "₹85 (MRP ₹95)",
+  "image": "https://images.openai.com/thumbnails/3c68f5cd44cda88c3e506d557e8817b1.jpeg",
+  "link": "https://www.patanjaliayurved.net/product/ayurvedic-medicine/arishtha/ashokarishta/10007",
+  "ingredients": [
+    "Ashoka (Saraca indica)",
+    "Dhataki (Woodfordia fruticosa)",
+    "Mustaka (Cyperus rotundus)",
+    "Haritaki (Terminalia chebula)",
+    "Bibhitaki (Terminalia bellirica)",
+    "Amalaki (Emblica officinalis)",
+    "Jeera (Cuminum cyminum)",
+    "Sunthi (Zingiber officinale)"
+  ],
+  "benefits": [
+    "Helps regulate menstrual cycles",
+    "Relieves menstrual pain and discomfort",
+    "Supports uterine health",
+    "Improves digestive health",
+    "Boosts general vitality in women"
+  ],
+  "dosage": {
+    "standard": "15–30 ml with equal amount of water twice daily after meals or as directed by the physician",
+    "administration": "Best taken after meals"
+  },
+  "safety_information": {
+    "side_effects": "Generally safe; high doses may cause mild gastric irritation",
+    "precautions": [
+      "Store in a cool and dry place",
+      "Shake well before use",
+      "Consult a physician before use if pregnant or breastfeeding"
+    ]
+  },
+  "purchase_links": [
+    "https://www.patanjaliayurved.net/product/ayurvedic-medicine/arishtha/ashokarishta/10007",
+    "https://www.1mg.com/otc/patanjali-ashokarishta-otc123456",
+    "https://www.amazon.in/Patanjali-Ashokarishta-450ml/dp/B00XYZ1234"
+  ]
+}
+},
 ];
 
 export default symptoms;
