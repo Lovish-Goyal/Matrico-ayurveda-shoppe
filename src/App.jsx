@@ -13,12 +13,14 @@ import { UserProvider } from "./utils/UserContext.jsx";
 import Detailpage from "./pages/DetailPage/Detailpage.jsx";
 import SymptomPage from "./pages/symptoms.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import PopupBanner from "./components/popup/popup.jsx"; // Import your PopupBanner component
 
 function App() {
   return (
     <UserProvider>
       <Router>
         <Nav />
+        <PopupBanner />
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Homepage />} />
