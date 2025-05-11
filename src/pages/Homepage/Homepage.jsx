@@ -85,7 +85,7 @@ const images = [
   },
   {
     name: "Divya Swasari Pravahi",
-    src: "Divya_Swasari_Pravahi.jpg",
+    src: "Divya_Swasari_Pravahi.png",
     link: "https://www.amazon.in/Patanjali-Swasari-Pravahi-250-g/dp/B00SFI7SRM",
     description:
       "Herbal & Ayurveda Diabetic Care Juice 1000 ml is a natural, plant-based supplement designed to help manage blood sugar levels and promote overall wellness.",
