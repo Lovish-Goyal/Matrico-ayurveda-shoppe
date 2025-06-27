@@ -27,13 +27,16 @@ function Contactpage() {
     }
 
     try {
-      const response = await fetch("http://localhost:7080/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(contactUser),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_BACKEND_URL}/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(contactUser),
+        }
+      );
 
       if (response.ok) {
         alert("Message sent successfully!");
