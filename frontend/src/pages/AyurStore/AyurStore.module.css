@@ -1,0 +1,156 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.textContent {
+  text-align: center;
+  color: #2af13b;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.Boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.box {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.boxImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+
+.imageDetails {
+  margin-top: 20px;
+  margin: 0 30px;
+}
+
+.imageDetails p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rowbutton {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detailsbutton {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buybutton {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #12a460;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+.searchBarWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .Boxes {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .rowbutton {
+    flex-direction: column;
+  }
+
+  .detailsbutton,
+  .buybutton {
+    width: 100%;
+  }
+
+  .container > div:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .container h1 {
+    font-size: 28px !important;
+    margin-bottom: 10px;
+  }
+
+  .container input {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 22px !important;
+  }
+
+  .container input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .imageDetails p {
+    font-size: 14px;
+  }
+
+  .Boxes {
+    gap: 15px;
+  }
+}

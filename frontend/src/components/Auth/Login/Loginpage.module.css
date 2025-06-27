@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/images/auth_background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loginBox {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.title {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.label {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.inputWithIcon {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 123, 255, 0.8);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.button:hover {
+  background-color: rgba(0, 123, 255, 1);
+  transform: scale(1.05);
+}
+
+.signupText {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.signupText a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signupText a:hover {
+  text-decoration: underline;
+}

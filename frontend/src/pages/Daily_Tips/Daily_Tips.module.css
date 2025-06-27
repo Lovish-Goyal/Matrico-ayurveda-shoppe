@@ -1,0 +1,106 @@
+/* Global Container */
+.container {
+  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2e3b4e;
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  font-size: 18px;
+  color: #6d7d8b;
+  line-height: 1.6;
+}
+
+/* Section Titles */
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 600;
+  color: #4e5b6e;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4e5b6e;
+  padding-bottom: 10px;
+}
+
+/* Content inside each section */
+.sectionContent {
+  font-size: 18px;
+  color: #5a6e79;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Tip Containers */
+.tipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.tipCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.tipCard:hover {
+  transform: translateY(-5px);
+}
+
+.tipTitle {
+  font-size: 22px;
+  color: #2f3b47;
+  margin-bottom: 10px;
+}
+
+.tipContent {
+  font-size: 16px;
+  color: #707f8c;
+  line-height: 1.6;
+}
+
+/* List for Diet Section */
+.dietList {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 16px;
+  color: #5a6e79;
+}
+
+.dietList li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  color: #4e5b6e;
+  background-color: #e0e7ec;
+  padding: 20px;
+  border-radius: 10px;
+}
