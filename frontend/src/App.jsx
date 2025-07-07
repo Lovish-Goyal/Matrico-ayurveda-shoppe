@@ -13,8 +13,8 @@ import { UserProvider } from "./utils/UserContext.jsx";
 import Detailpage from "./pages/DetailPage/Detailpage.jsx";
 import SymptomPage from "./pages/symptoms/symptoms.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
-import PopupBanner from "./components/popup/popup.jsx"; // Import your PopupBanner component
-import AyurvedaBot from "./components/ayurvedicBot/ayurBot.jsx";
+import PopupBanner from "./components/popup/popup.jsx";
+import AyurvedaBot from "./components/ayurvedic_bot/ayurbot.jsx";
 
 function App() {
   return (
