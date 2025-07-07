@@ -1,6 +1,6 @@
-# 🧪 Matrico Ayurveda – AI-Powered Symptom-Based Desi Remedies Platform
+# 🌿 Matrico Ayurveda – AI-Powered Symptom-Based Desi Remedies Platform
 
-**Matrico Ayurveda** is a full-stack application that brings together traditional Ayurvedic wisdom and modern AI. Users can enter health symptoms and get personalized **desi nuskhe**, **wellness advice**, and **healthy lifestyle tips** via a conversational **Gemini AI-powered Health Bot**.
+**Matrico Ayurveda** is a full-stack application that combines traditional Ayurvedic wisdom with modern AI. Users can enter health symptoms and get personalized **desi nuskhe**, **wellness advice**, and **healthy lifestyle tips** via a conversational **Gemini AI-powered Health Bot**.
 
 Built with **Vite** for the frontend and **Node.js/Express** on the backend.
 
