@@ -3,9 +3,9 @@
   justify-content: center;
   background-image: url("/images/Back.png");
   height: 400px;
-  width: 100%; /* Full width */
+  width: 100%; 
   background-repeat: no-repeat;
-  background-size: cover; /* Cover the entire container */
+  background-size: cover; 
   background-position: top;
   margin-bottom: 20px;
 }

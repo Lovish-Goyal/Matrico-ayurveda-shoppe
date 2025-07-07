@@ -11,9 +11,10 @@ import SignupPage from "./components/Auth/Signup/SignupPage.jsx";
 import Footer from "./components/footer/footer.jsx";
 import { UserProvider } from "./utils/UserContext.jsx";
 import Detailpage from "./pages/DetailPage/Detailpage.jsx";
-import SymptomPage from "./pages/symptoms.jsx";
+import SymptomPage from "./pages/symptoms/symptoms.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import PopupBanner from "./components/popup/popup.jsx"; // Import your PopupBanner component
+import AyurvedaBot from "./components/ayurvedicBot/ayurBot.jsx";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/symptoms" element={<SymptomPage />} />
         </Routes>
         <Footer />
+        <AyurvedaBot />
       </Router>
     </UserProvider>
   );

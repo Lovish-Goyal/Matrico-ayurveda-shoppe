@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import symptoms from "../data/diseases.js";
+import { useState } from "react";
+import symptoms from "../../data/diseases.js";
 import styles from "./SymptomsPage.module.css";
 
 const SymptomPage = () => {

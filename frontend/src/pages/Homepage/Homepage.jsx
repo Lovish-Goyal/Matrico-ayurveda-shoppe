@@ -544,7 +544,7 @@ function Homepage() {
   };
 
   const handleGoToSymptoms = () => {
-    navigate("/symptoms"); // the path to your symptom page
+    navigate("/symptoms");
   };
 
   return (
